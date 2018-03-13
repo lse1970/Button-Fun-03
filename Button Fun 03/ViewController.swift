@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
     var count = 0
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
     @IBAction func buttinpressed(_ sender: Any) {
     count = count + 1
     print("\(count) button pressed!!")
+        resultLabel.text = "\(count) button pressed!!"
     }
     
     override func didReceiveMemoryWarning() {
